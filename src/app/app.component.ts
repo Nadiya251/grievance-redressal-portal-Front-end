@@ -4,15 +4,19 @@ import { GroupBoxComponent } from "./group-box/group-box.component";
 import { CarouselComponent } from "./carousel/carousel.component";
 import { DashboardComponent } from "./dashboard/dashboard.component";
 import { NgClass ,NgIf} from '@angular/common';
+import { VerificationFormComponent } from "./verification-form/verification-form.component";
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, GroupBoxComponent, CarouselComponent, DashboardComponent,NgClass,NgIf],
+  imports: [RouterOutlet, GroupBoxComponent, CarouselComponent, DashboardComponent, NgClass, NgIf, VerificationFormComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
 export class AppComponent {
+navigateTo(arg0: string) {
+throw new Error('Method not implemented.');
+}
   title = 'grievance-redressal-portal';
   isMenuOpen = false;
 
