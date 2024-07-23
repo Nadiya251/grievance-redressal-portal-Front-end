@@ -46,7 +46,7 @@ export class VerificationFormComponent implements OnInit {
   onSubmit(): void {
     if (this.verificationForm.valid) {
       alert('Form submitted successfully!');
-      this.router.navigate(['/otpverification']);
+      this.router.navigate(['/otp']);
     } else {
       alert('Please fill all the required fields correctly.');
     }
